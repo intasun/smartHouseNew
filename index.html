@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SmartHouse</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" type="text/css" href="./smartHouse.css" />
+   </head>
+   <body>
+      <header>
+         <img src="smartHouseLogo.jpg" alt="SmartHouseLogo"/>
+      </header>
+      <div id="addDevice" class="addDevice">
+         <h3>Добавить новое устройство</h3>
+         
+         <form name="nameDevice">
+            Какое устройство добавляем? <br />
+            <input id="nameDevice" type="text" name="nameDevice"/>
+         </form>
+         <form id="switches" class="dinamicForm" name="switches">
+            Сколько выключателей?
+            <input id="numberOfSwitches" type="number" name="numberOfSwitches" min="0" max="3" value="0"/> <br />
+            <input id="firstNameOfSwitch" type="text" name="nameOfSwitch" placeholder="Что включать?" />
+            <input id="secondNameOfSwitch" type="text" name="nameOfSwitch" placeholder="Что включать вторым?" />
+            <input id="thirdNameOfSwitch" type="text" name="nameOfSwitch" placeholder="Что включать третьим?" />
+         </form>
+         <form id="customizes" class="dinamicForm" name="customizes">
+            Сколько настройщиков?
+            <input id="numberOfCustomizes" type="number" name="numberOfCustomizes" min="0" max="3" value="0"/> <br />
+            <input id="firstNameOfCustomizes" type="text" name="nameOfCustomizes" placeholder="Что настраивать?" />
+            <div id="firstNameOfCustomizesValues">
+               <input id="firstNameOfCustomizesMin" type="text" name="nameOfCustomizesMin" placeholder="Мин" />
+               <input id="firstNameOfCustomizesMax" type="text" name="nameOfCustomizesMax" placeholder="Макс" />
+               <input id="firstNameOfCustomizesDefault" type="text" name="nameOfCustomizesDef" placeholder="По умолчанию" />
+            </div>   
+            <input id="secondNameOfCustomizes" type="text" name="nameOfCustomizes" placeholder="Что вторым настраивать?" />
+            <div id="secondNameOfCustomizesValues">
+               <input id="secondNameOfCustomizesMin" type="text" name="nameOfCustomizesMin" placeholder="Мин" />
+               <input id="secondNameOfCustomizesMax" type="text" name="nameOfCustomizesMax" placeholder="Макс" />
+               <input id="secondNameOfCustomizesDefault" type="text" name="nameOfCustomizesDef" placeholder="По умолчанию" />
+            </div> 
+            <input id="thirdNameOfCustomizes" type="text" name="nameOfCustomizes" placeholder="Что третьим настраивать?" />
+            <div id="thirdNameOfCustomizesValues">
+               <input id="thirdNameOfCustomizesMin" type="text" name="nameOfCustomizesMin" placeholder="Мин" />
+               <input id="thirdNameOfCustomizesMax" type="text" name="nameOfCustomizesMax" placeholder="Макс" />
+               <input id="thirdNameOfCustomizesDefault" type="text" name="nameOfCustomizesDef" placeholder="По умолчанию" />
+            </div> 
+         </form>
+         <form id="modes" class="dinamicForm" name="customizes">
+            Сколько режимов?&emsp;&emsp;&nbsp;
+            <input id="numberOfModes" type="number" name="numberOfModes" min="0" max="7" value="0"/> <br />
+            <input id="firstNameOfModes" type="text" name="nameOfModes" placeholder="Название первого режима" />
+            <input id="secondNameOfModes" type="text" name="nameOfModes" placeholder="Название второго режима" />
+            <input id="thirdNameOfModes" type="text" name="nameOfModes" placeholder="Название третьего режима" />
+            <input id="fourthNameOfModes" type="text" name="nameOfModes" placeholder="Название четвертого режима" />
+            <input id="fifthNameOfModes" type="text" name="nameOfModes" placeholder="Название пятого режима" />
+            <input id="sixthNameOfModes" type="text" name="nameOfModes" placeholder="Название шестого режима" />
+            <input id="seventhNameOfModes" type="text" name="nameOfModes" placeholder="Название седьмого режима" />
+         </form>
+         <br />
+         <input id="addDeviceBatton" type="button" name="adding" value="Добавить" />
+         <br />
+      </div>
+      
+      <main>
+      
+         <!--Сюда добавляется код-->
+    
+      </main>
+      
+      <footer>
+         &copy; Тасун И.А., 2017, JS_08/17
+      </footer>
+      <script src="./switch.js"></script>
+      <script src="./customize.js"></script>
+      <script src="./mode.js"></script>
+      <script src="./view.js"></script>
+      <script src="./device.js"></script>
+      <script src="./addingDevice.js"></script>
+      <script src="./formAddingOnclick.js"></script>
+   </body>
+</html>
+
+
+
